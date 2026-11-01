@@ -184,7 +184,7 @@ rentease/
 
 As of now, the latest version of this README file, I've started the revison of `React.js`, will be building atleast 3-5 major Projects using this framework with other modern tech to strengthen my fundamentals, and, finally, become a MERN-Stack Web Developer.
 
-This project/website is my 1st self-made Full-Stack Web Development project, which I'm really proud of, and the idea plus prototype of this project was given by my mentor, [Ms. Shradha Khapra](https://www.linkedin.com/in/shradhakhapra/).
+
 
 My end-goal in this project is to make it a full-fledge software-solution, just like AirBnb, allowing me to learn a lot about modern-development practices and building software-solutions, which will be used by people to rent properties worldwide, and I will be using this project as a portfolio piece to showcase my skills to potential employers. 
 
@@ -192,24 +192,4 @@ After building a few `React.js` projects, I will be continuing to work in this `
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/VinayNoogler000/RentEase/blob/main/LICENSE.txt) file for details.
-
-## 📞 Contact
-
-**Vinay Tambey**
-- LinkedIn: [Vinay Tambey](https://www.linkedin.com/in/vinaytambey)
-- Email: [vinaytambey000@gmail.com](mailto:vinaytambey000@gmail.com)
-- Twitter/X: [@VinayNoogler000](https://x.com/VinayNoogler000)
-- GitHub: [@VinayNoogler000](https://github.com/VinayNoogler000)
-
-## 📊 Project Status
-
-Active development - Features being added regularly.
-
-## 💼 Support
-
-Give a ⭐️ if this project helped you!
-
----
-
-Made with ❤️ by [Vinay Tambey](https://github.com/VinayNoogler000)
+This project is licensed under the MIT License -
