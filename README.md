@@ -180,15 +180,7 @@ rentease/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 🗓️ What My Daily Life Looks Like?
 
-As of now, the latest version of this README file, I've started the revison of `React.js`, will be building atleast 3-5 major Projects using this framework with other modern tech to strengthen my fundamentals, and, finally, become a MERN-Stack Web Developer.
-
-
-
-My end-goal in this project is to make it a full-fledge software-solution, just like AirBnb, allowing me to learn a lot about modern-development practices and building software-solutions, which will be used by people to rent properties worldwide, and I will be using this project as a portfolio piece to showcase my skills to potential employers. 
-
-After building a few `React.js` projects, I will be continuing to work in this `RentEase` project or some other passion projects, where I'll be building at least 2 or more real-world Full-Stack (MERN) projects to hone my skills, and secure a Full-Stack Web Developer job.
 
 ## 📜 License
 
