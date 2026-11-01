@@ -1,0 +1,47 @@
+<% layout("layouts/boilerplate") %>
+
+<script>
+    const mapBoxToken = "<%= process.env.MAP_TOKEN %>";
+    const listing = <%- JSON.stringify(listing) %>;
+</script>
+
+<body class="show-listing-page">
+    <h2><%= listing.title %></h2>
+
+    <div class="listing-card col-6">
+        <img src="<%= listing.image.url %> " class="card-img-top" alt="<%= listing.image.filename %>" loading="eager">
+        <div class="card-body">
+            <p class="card-text"><b>Owned By:</b> <i><%= listing.owner.username %></i></p>
+            <p class="card-text"><%= listing.description %></p>
+            <p class="card-text"><b>Category:</b> <%= listing.category.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') %></p>
+            <p class="card-text"><b>Price:</b> &#8377;<%= listing.price.toLocaleString("en-IN") %> </p>
+            <p class="card-text"><b>Location:</b> <%= listing.location %></p>
+            <p class="card-text"><b>Country:</b> <%= listing.country %></p>
+        </div>
+    </div>
+
+    <% if (currUser && currUser._id.equals(listing.owner._id)) { %>
+    <div class="links">
+        <a href="/listings/<%= listing._id %>/edit" class="btn btn-warning" role="button"><i class="fa-solid fa-pencil"></i> &nbsp;  Edit</a>
+
+        <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE" class="delete-form">
+            <button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash"></i> &nbsp;  Delete</button>
+        </form>
+    </div>
+    <% } %>
+
+    <%- include("../includes/review-form.ejs") %>
+
+    <hr class="col-6 mt-4"/>
+
+    <%- include("../includes/reviews.ejs") %>
+
+    <hr class="col-6 mt-4"/>
+        
+    <div class="map-container mb-4">
+        <h3 class="mt-2 mb-3 text-center">Where You'll Be</h3>
+        <div id="map"></div>
+    </div>
+
+    <script src="/js/map.js"></script>
+</body>

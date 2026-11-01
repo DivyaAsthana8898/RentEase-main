@@ -1,0 +1,107 @@
+/* Styling for Filters Container: */
+#filters {
+    width: 100%;
+    max-width: 1550px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.scroll-filters {
+    min-width: 300px;
+}
+
+.scroll-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
+    background-color: #fe424d;
+    font-size: 0.75rem;
+    transition: background-color 0.2s ease-in-out;;
+}
+
+.scroll-btn i {
+    color: white;
+}
+    
+.scroll-btn:hover {
+    background-color: #e33a45;
+}
+
+@media (max-width: 1190px) {
+    .scroll-btn {
+        display: inline-block;
+    }
+}
+
+#filters .main {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    min-width: 200px;
+}
+
+/* Styling for Filter-Links: */
+a.filter-link {
+    color: initial !important;
+    flex-shrink: 0;
+}
+
+/* Styling for Individual Filter: */
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease-in-out;
+}
+
+.filter i,
+.filter span {
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.filter span {
+    font-size: 0.8rem;
+    opacity: 0.75;
+}
+
+.filter:hover,
+.filter:hover i,
+.filter:hover span {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.filter:hover {
+    border-bottom: 2px solid black;
+}
+
+/* Styling for Toggling Taxes Input[Check] Element */
+.tax-toggle  {
+    min-width: 258px;
+    width: fit-content;
+    color: #fe424d;
+    margin-top: 0.5rem;
+    background-color: white !important;
+    border: 1px solid black;
+    border-radius: 0.75rem;
+    border: 2px solid #fe424d !important;
+    transition: 0.2s ease-in-out;
+}
+
+.tax-toggle, .tax-toggle label, .tax-toggle input {
+    cursor: pointer;
+}
+
+.tax-toggle:hover {
+    color: white;
+    background-color: #fe424d !important;
+}
+
+.tax-toggle:active {
+    background-color: #cc3f48 !important;
+}
